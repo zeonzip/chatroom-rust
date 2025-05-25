@@ -1,0 +1,13 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rand = "0.9.1"
+shared = { path = "../shared" }
+
+
+[dependencies.tokio]
+version = "1.45.0"
+features = ["net", "io-util", "rt", "sync", "rt-multi-thread", "macros"]
